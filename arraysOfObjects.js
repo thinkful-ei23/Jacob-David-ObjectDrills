@@ -10,10 +10,14 @@ let developers = [
     jobTitle: 'Engineer'
   },
   {
-    name: 'Bill Gates',
-    jobTitle: 'CEO'
+    name: 'Tim Cook',
+    jobTitle: 'COO'
   }
 ];
 for (let i = 0; i < developers.length; i++) {
-  console.log(`${developers[i].name} ${developers[i].jobTitle}`);
+  if (developers[i].jobTitle !== 'CEO'){
+    developers[i].boss = 'Steve Jobs'
+  }
+  developers[i].boss === 'Steve Jobs'? console.log(`${developers[i].jobTitle} ${developers[i].name} reports to ${developers[i].boss}.`) : console.log(`${developers[i].jobTitle} ${developers[i].name} doesn't report to anybody.`);
 }
+
