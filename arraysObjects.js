@@ -1,0 +1,5 @@
+let eating = {
+    meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+}
+
+console.log(eating.meals[3]);
